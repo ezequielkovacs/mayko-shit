@@ -1,6 +1,5 @@
 import React from 'react';
-import Mayko from '../components/Mayko';
-import Geraldo from '../components/Geraldo';
+import {Mayko, Geraldo, Lusca, LuscaBranco} from '../components/Mayko';
 import {Col, Row} from 'antd';
 
 class Dashboard extends React.Component {
@@ -9,14 +8,17 @@ class Dashboard extends React.Component {
     return (
       <>
       <Row gutter={24} type="flex" justify="space-around" align="middle">
-      <Col xs={{ span: 24 }} lg={{ span: 8 }}>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
       <Mayko />
       </Col>
-      <Col xs={{ span: 24 }} lg={{ span: 8 }}>
-      <h2>GERALDO FILHO DA PUTA</h2>
-      </Col>
-      <Col xs={{ span: 24 }} lg={{ span: 8 }}>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
       <Geraldo />
+      </Col>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
+      <Lusca />
+      </Col>
+      <Col xs={{ span: 24 }} lg={{ span: 6 }}>
+      <LuscaBranco />
       </Col>
       </Row>
       </>

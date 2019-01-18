@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb, Col, Row } from 'antd';
 import { Link, withRouter } from 'react-router-dom';
 
 const { Header, Content, Footer } = Layout;
@@ -28,7 +28,13 @@ class CustomLayout extends React.Component {
             <Link to="/">Home</Link>
             </Breadcrumb.Item>
           </Breadcrumb>
-          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>{this.props.children}</div>
+          <>
+          <Row>
+          <Col span={24} style={{ padding: 24, minHeight: 280 }}>
+        {this.props.children}
+          </Col>
+          </Row>
+          </>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
           Mayko Rancoroso
