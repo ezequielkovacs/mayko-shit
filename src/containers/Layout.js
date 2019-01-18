@@ -29,7 +29,7 @@ class CustomLayout extends React.Component {
             </Breadcrumb.Item>
           </Breadcrumb>
           <>
-          <Row>
+          <Row gutter={24} type="flex" justify="space-around" align="middle">
           <Col span={24} style={{ padding: 24, minHeight: 280 }}>
         {this.props.children}
           </Col>
